@@ -1,0 +1,11 @@
+CREATE TABLE 'Reservation' (
+    'name' TEXT NOT NULL DEFAULT '' COMMENT '名前',
+    'number' INT NOT NULL DEFAULT '' COMMENT '人数',
+    'status' TEXT NOT NULL DEFAULT '' COMMENT '部屋ランク',
+    'in' DATE NOT NULL DEFAULT '' COMMENT 'チェックイン時刻',
+    'out' DATE NOT NULL DEFAULT '' COMMENT 'チェックアウト時刻',
+    `mail` VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'メールアドレス',
+    PRIMARY KEY(mail)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4;
+
+" sql = insert into `Reservation` (`name`, `number`, `status`, `in`, `out`, 'mail') values ('" + name + "', '" + number "', '" + status "', '" + in + "', '" + out + "', '" + mail + "')"

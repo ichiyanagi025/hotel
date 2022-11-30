@@ -1,0 +1,8 @@
+CREATE TABLE `User`(
+  `name` TEXT COMMENT '名前',
+  `furigana` TEXT COMMENT 'ふりがな',
+  `mail` VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'メールアドレス',
+  `tell` VARCHAR(13) NOT NULL DEFAULT '' COMMENT '電話番号',
+  `password` VARCHAR(13) NOT NULL DEFAULT '' COMMENT 'パスワード',
+  PRIMARY KEY (mail)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4;

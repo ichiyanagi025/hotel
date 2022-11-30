@@ -1,0 +1,7 @@
+CREATE TABLE `Session` (
+ `mail` VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'メールアドレス',
+ `session_id` VARCHAR(255) NOT NULL DEFAULT '' COMMENT 'セッションID',
+ PRIMARY KEY (`mail`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4
+
+sql = "insert into `Session`(`mail`,`session_id`)values ( '" + mail + "', '" + author + "')"
